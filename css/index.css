@@ -1,0 +1,79 @@
+body {
+  position: relative;
+}
+
+.container{
+  /* max-width: none !important; */
+}
+
+
+
+#topBar{
+  height: 180px;
+  background-color: ;
+}
+#nameLogo{
+  font-family: 'Zeyada', cursive;
+  font-size: 44px;
+  line-height: 44px;
+  padding-top: 80px;
+}
+#lastName{
+  padding-left: 17px;
+}
+
+
+
+#nav{
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float:right;
+}
+
+
+
+
+#contentTitle{
+  text-align: center;
+  /* font-family: 'Lato', sans-serif; */
+  font-weight: 200;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#projectMatchings{
+  background-color: green;
+  height:250px;
+}
+
+
+
+/* Project Card */
+.projectCard{
+  /* float:left; */
+  /* height: 300px; */
+  position: relative;
+  cursor: pointer; cursor: hand;
+  margin-bottom: 20px;
+}
+.cardTitle{
+  text-align: center;
+  font-size: 26px;
+  margin-top: 20px;
+  font-weight: 100;
+
+}
+.cardReveal{
+  background-color: white;
+  /* height:300px; */
+  height: 100%;
+  opacity: 0.95;
+  display:none;
+  position: absolute;
+}
+.cardRevealTitle{
+  margin-top: 15px;
+
+}

@@ -61,6 +61,21 @@ app.use(cookieParser());
 var router = express.Router();
 
 
+
+app.get('/8-24', function (req, res , next ) {
+  //res.cookie( "test3" , "lmaoboth");
+  console.log("get /8-24");
+
+  res.sendFile('index.html', {"root": appDir+"/projects/8-24"} );
+  
+
+});
+
+
+
+
+
+
 app.get('/', function (req, res , next ) {
   //res.cookie( "test3" , "lmaoboth");
   console.log("get /");
@@ -71,10 +86,11 @@ app.get('/', function (req, res , next ) {
 
 
 
+app.use('/', express.static(__dirname));  // set root folder\
 
 app.use('/', router);
 
-app.use('/', express.static(__dirname));  // set root folder\
+
 
 /*
 app.listen(port, function () {
@@ -89,5 +105,3 @@ server.listen(port, function () {
 //app.listen(443, function(){
   console.log('Example app listening on port '+ port);
 });
-
-

@@ -1,0 +1,31 @@
+html, body {height: 100%;}
+
+#billboard{
+  height:100%;
+
+  /* background-image: url("../imgs/824BackGrey.jpg"); */
+
+  background: #FF512F; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #FF512F , #DD2476); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #FF512F , #DD2476); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 0;
+}
+
+#billImg{
+  opacity: 0.1  ;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#billTitle{
+  font-family: 'Fira Sans', sans-serif;
+  font-weight:900;
+  color:white;
+  font-size:  16vw; 
+  opacity: 0.2;
+}
+
+#samples{
+  height: 400px;
+}

@@ -1,6 +1,97 @@
-<html>
+<html ng-app="jgab">
 
-jgab
-fetches
+<head>
 
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+
+  <!-- angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-cookies.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+
+  <!-- materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+
+
+
+
+
+ <script src="js/main.js"></script>
+
+ <link rel="stylesheet" href="/css/index.css">
+
+ <link href='https://fonts.googleapis.com/css?family=Lato:100|Zeyada' rel='stylesheet' type='text/css'>
+
+
+
+
+ <script>
+   $(document).ready(function(){
+
+    $('.scrollspy').scrollSpy();
+
+
+    //Fade Interactions With .cardReveal
+
+    $( ".projectCard" ).click(function() {
+      //alert( "Handler for .click() called." );
+
+      $('.cardReveal').not( $(this) ).fadeOut("slow");
+
+      if ( $(this).find('.cardReveal').css('display') == 'none' ) {
+        $(this).find('.cardReveal').fadeToggle("normal");
+      }
+
+    });
+
+    /*
+    $( "#projectCard" ).mouseleave(function() {
+      //alert( "Handler for .click() called." );
+      $(this).find('.cardReveal').fadeOut("normal");
+    });
+    */
+
+
+   });
+ </script>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+  <div id="mainPage" class="container">
+
+
+    
+
+    <!-- <div class="divider"></div> -->
+
+    <div id="contentTitle" class="col s4 offset-s4">
+      Design & Development
+    </div>
+
+
+  </div> <!-- end of mainPage container -->
+
+
+
+
+
+
+
+
+
+</body>
 </html>
